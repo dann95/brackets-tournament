@@ -497,13 +497,13 @@
     var sortAm = Math.floor(Math.random() * 20) + 1;
 
     var urlBase = '/assets/logos/';
-/*
+
     for(i = 0; i <= sortAm; i++) {
         teams = teams.sort(function() {
             return .5 - Math.random();
         });
     }
-*/
+
     document.querySelectorAll('.first_match').forEach(function (m) {
         var team = teams.pop();
         var img = createImg(team.logo, [], team.w, team.h);
